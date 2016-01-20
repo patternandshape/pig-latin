@@ -4,7 +4,7 @@ var isVowel = function(word) {
 };
 
 var isCon = function(word) {
-  if (isVowel(word) === false) {
+  if (isVowel(word) === false ) {
     var wordArray = word.split('');
     var shiftArray = wordArray.shift();
     wordArray.push((shiftArray) + "ay");
@@ -63,9 +63,20 @@ var hasQuSecond = function(word) {
 };
 var plMaker = function(word) {
 
+
+
   if (isVowel(word) === true) {
     var word = (word + "ay");
     return word;
+
+  } else if (isQu(word) === true) {
+    var word = hasQuFirst(word);
+    return word;
+
+  } else if(isQuTwo(word)=== true) {
+    var word = hasQuSecond(word);
+    return word;
+
   } else if (isVowel(word) === false) {
     var word = isCon(word);
     return word;
@@ -77,12 +88,6 @@ var plMaker = function(word) {
   } else if (isVowel2(word) === false) {
     var word = isDoubleCon(word);
     return word;
-
-
-  } else if (isQu(word) === true) {
-    var word = hasQuFirst(word);
-    return word;
-
 
   } else if (isQu(word) === false) {
     var word = hasQuSecond(word);
