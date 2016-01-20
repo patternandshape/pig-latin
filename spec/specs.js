@@ -1,24 +1,35 @@
-describe ('isVowel', function () {
- it("check to see if input starts with vowel", function () {
-   expect(isVowel("ant")).to.equal(true)
- });
+describe('isVowel', function() {
+    it("check to see if input starts with vowel", function() {
+        expect(isVowel("ant")).to.equal(true)
+    });
 });
 
+describe('isCon', function() {
+    it("add ay to the end of words that start with consonant and move the first letter to the end", function() {
+        expect(isCon("dog")).to.equal("ogday")
+    });
+});
 
-describe ('inputAy', function () {
- it("add ay to the end of words that start with vowel", function () {
-   expect(inputAy("apple")).to.equal("appleay")
- });
- });
+describe('isDoubleCon', function() {
+    it("add ay to the end of words that start with two consonants and move the consonants to the end", function() {
+        expect(isDoubleCon("truck")).to.equal("ucktray")
+    });
+});
 
- // it("add ay to the end of words that start with consonant and move all of the first consecutive consonants to the end", function () {
- //   expect(inputAy("truck")).to.equal("ucktray")
- // });
- //
- // it("add ay to the end of words that start with qu and move qu to the end ", function () {
- //   expect(inputAy("quail")).to.equal("ailquay")
- // });
- //
- // it("add ay to the end of words that start with y", function () {
- //   expect(inputAy("yellow")).to.equal("ellowyay")
- // });
+describe('hasQuSecond', function() {
+    it("add ay to the end of words that start 'qu' as second and third letters", function() {
+        expect(hasQuSecond("squeal")).to.equal("ealsquay")
+    });
+});
+
+describe('isDoubleCon', function() {
+    it("add ay to the end of words that start 'qu' and move 'qu' to the end", function() {
+        expect(isDoubleCon("quail")).to.equal("ailquay")
+    });
+});
+
+describe('isCon', function() {
+    it("add ay to the end of words that start with y", function() {
+        expect(isCon("yellow")).to.equal("ellowyay")
+    });
+});
