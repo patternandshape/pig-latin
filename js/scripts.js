@@ -77,16 +77,16 @@ var plMaker = function(word) {
     var word = hasQuSecond(word);
     return word;
 
-  } else if (isVowel(word) === false) {
-    var word = isCon(word);
-    return word;
-
-  } else if (isVowel2(word) === true) {
+  } else if (isVowel(word) === false && isVowel2(word) ===true) {
     var word = isCon(word);
     return word;
 
   } else if (isVowel2(word) === false) {
     var word = isDoubleCon(word);
+    return word;
+
+  } else if (isVowel2(word) === true) {
+    var word = isCon(word);
     return word;
 
   } else if (isQu(word) === false) {

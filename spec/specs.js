@@ -39,6 +39,7 @@ describe('isQu', function() {
         expect(isQu("queal")).to.equal(true)
     });
 });
+
 describe('isQutwo', function() {
     it("add ay to the end of words that start 'qu' and move 'qu' to the end", function() {
         expect(isQuTwo("squeal")).to.equal(true)
