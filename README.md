@@ -1,26 +1,26 @@
-# Pig Latin Project
+# Pig Latin
 
-#### This page translates the user input to Pig Latin pattern.
-#### January 20, 2016.
+January 20, 2016
 
-#### By Molly Curtin and Alex Larson
+##### By Molly Curtin &amp; Alex Larson
 
-## Description
-This webpage will help you speak in Pig Latin.
+### Description
 
-#### Technology used:
-* Atom
-* Terminal
+This page translates the user input into Pig Latin.
+
+##### Technologies Used
+
 * HTML
 * CSS
-* Javascript
+* JavaScript
 * jQuery
-* Bootstrap
-* DOM manipulation of elements
 * Mocha
 * Chai
+* BDD
+* Git
 
+##### License
 
+*This software is licensed under the MIT license.*
 
-#### License:
-&copy; 2016 Molly Curtin and Alex Larson
+&copy;2016 **Molly Curtin &amp; Alex Larson**
